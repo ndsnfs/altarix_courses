@@ -61,11 +61,11 @@ function runWorkingChamberEngine()
 // положения ВМТ(верхняя мертвая точка) - первый поршень вверху
 // клапаны первого цилиндра закрыты
 
-$fuel = 10; // топливо
+$fuel = 10; // ограничитель
 
 function runFourCylinderEngine()
 {	
-	global $fuel; // топливо
+	global $fuel; // ограничитель
 
 	logger('Cтарт двигатель' . BR . BR);
 
@@ -84,4 +84,4 @@ function runFourCylinderEngine()
 	logger('Стоп двигатель' . BR);
 }
 
-runFourCylinderEngine();
+runFourCylinderEngine(4);
