@@ -98,7 +98,7 @@ function conv($str, $numSustem, $intention)
         default: throw new Exception("Инвалид аргумент");
     }
 
-    return $foo($str);
+    return call_user_func($foo, $str);
 }
 
 var_dump(conv('167', 10, 16));
